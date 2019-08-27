@@ -21,6 +21,9 @@ class CreateMembersTable extends Migration
             $table->string('dateOfBirth')->nullable();
             $table->string('telephoneNumber')->nullable();
             $table->string('address');
+            $table->string('addressTown');
+            $table->string('addressPostcode');
+            $table->string('subscriptionType');
             $table->timestamps();
         });
     }
